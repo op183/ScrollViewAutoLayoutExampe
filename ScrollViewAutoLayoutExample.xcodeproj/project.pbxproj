@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D970FCF1A8BDF8D0088E1B5 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D970FCE1A8BDF8D0088E1B5 /* LoginButton.swift */; };
 		FAF14FC21947404E00ED00C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF14FC11947404E00ED00C5 /* AppDelegate.swift */; };
 		FAF14FC41947404E00ED00C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF14FC31947404E00ED00C5 /* ViewController.swift */; };
 		FAF14FC71947404E00ED00C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF14FC51947404E00ED00C5 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D970FCE1A8BDF8D0088E1B5 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		FAF14FBC1947404E00ED00C5 /* ScrollViewAutoLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewAutoLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF14FC01947404E00ED00C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF14FC11947404E00ED00C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				FAF14FC51947404E00ED00C5 /* Main.storyboard */,
 				FAF14FC81947404E00ED00C5 /* Images.xcassets */,
 				FAF14FBF1947404E00ED00C5 /* Supporting Files */,
+				4D970FCE1A8BDF8D0088E1B5 /* LoginButton.swift */,
 			);
 			path = ScrollViewAutoLayoutExample;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF14FC41947404E00ED00C5 /* ViewController.swift in Sources */,
+				4D970FCF1A8BDF8D0088E1B5 /* LoginButton.swift in Sources */,
 				FAF14FC21947404E00ED00C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,8 +330,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ScrollViewAutoLayoutExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -337,8 +343,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ScrollViewAutoLayoutExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -397,6 +405,7 @@
 				FAF14FDA1947404E00ED00C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAF14FDB1947404E00ED00C5 /* Build configuration list for PBXNativeTarget "ScrollViewAutoLayoutExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +414,7 @@
 				FAF14FDD1947404E00ED00C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

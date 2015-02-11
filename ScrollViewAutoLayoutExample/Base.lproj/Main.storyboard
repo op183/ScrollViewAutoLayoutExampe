@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,38 +14,54 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PP-oz-hYs">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9j-aO-Xsg" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="480" height="184"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="380"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="55r-Nj-TCK">
-                                                <rect key="frame" x="20" y="102" width="440" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="55r-Nj-TCK">
+                                                <rect key="frame" x="200" y="150" width="200" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="hZJ-3R-jLb"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="kUf-l5-Dvk"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIR-Yr-vZI">
-                                                <rect key="frame" x="20" y="52" width="440" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bIR-Yr-vZI">
+                                                <rect key="frame" x="200" y="200" width="200" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Sf2-dt-jzX"/>
+                                                </connections>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2p-x0-r2Y" customClass="LoginButton" customModule="ScrollViewAutoLayoutExample" customModuleProvider="target">
+                                                <rect key="frame" x="265" y="276" width="70" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="2lf-7N-ljR"/>
+                                                    <constraint firstAttribute="height" constant="40" id="WuR-cc-e2X"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Login"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.72549019609999998" green="0.23154237329999999" blue="0.17218144730000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="bIR-Yr-vZI" firstAttribute="top" secondItem="v9j-aO-Xsg" secondAttribute="top" priority="250" constant="52" id="DsF-P3-w6q"/>
+                                            <constraint firstItem="bIR-Yr-vZI" firstAttribute="top" secondItem="v9j-aO-Xsg" secondAttribute="top" priority="250" constant="200" id="DsF-P3-w6q"/>
                                             <constraint firstItem="55r-Nj-TCK" firstAttribute="width" secondItem="bIR-Yr-vZI" secondAttribute="width" id="FoQ-oX-3y3"/>
-                                            <constraint firstAttribute="trailing" secondItem="55r-Nj-TCK" secondAttribute="trailing" constant="20" id="FzU-JO-wdV"/>
+                                            <constraint firstAttribute="centerX" secondItem="k2p-x0-r2Y" secondAttribute="centerX" id="GC6-ax-X3Q"/>
                                             <constraint firstAttribute="centerX" secondItem="bIR-Yr-vZI" secondAttribute="centerX" id="GI4-SR-oZI"/>
-                                            <constraint firstAttribute="centerY" secondItem="55r-Nj-TCK" secondAttribute="centerY" constant="-25" id="QZs-cU-Bai"/>
-                                            <constraint firstAttribute="centerY" secondItem="bIR-Yr-vZI" secondAttribute="centerY" constant="25" id="iQy-F9-BzE"/>
-                                            <constraint firstItem="55r-Nj-TCK" firstAttribute="leading" secondItem="v9j-aO-Xsg" secondAttribute="leading" constant="20" id="lA5-Ac-CWh"/>
-                                            <constraint firstItem="bIR-Yr-vZI" firstAttribute="leading" secondItem="v9j-aO-Xsg" secondAttribute="leading" constant="20" id="nBz-Fv-nYW"/>
+                                            <constraint firstAttribute="centerY" secondItem="55r-Nj-TCK" secondAttribute="centerY" constant="25" id="QZs-cU-Bai"/>
+                                            <constraint firstAttribute="centerY" secondItem="bIR-Yr-vZI" secondAttribute="centerY" constant="-25" id="iQy-F9-BzE"/>
                                             <constraint firstAttribute="centerX" secondItem="55r-Nj-TCK" secondAttribute="centerX" id="orr-Bk-gRa"/>
-                                            <constraint firstAttribute="trailing" secondItem="bIR-Yr-vZI" secondAttribute="trailing" constant="20" id="zKU-ay-8TC"/>
+                                            <constraint firstItem="k2p-x0-r2Y" firstAttribute="top" secondItem="bIR-Yr-vZI" secondAttribute="bottom" constant="46" id="pix-OO-gnw"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -54,9 +71,12 @@
                                     <constraint firstAttribute="trailing" secondItem="v9j-aO-Xsg" secondAttribute="trailing" id="rAl-td-d4g"/>
                                     <constraint firstItem="v9j-aO-Xsg" firstAttribute="top" secondItem="1PP-oz-hYs" secondAttribute="top" id="yz7-ad-oN2"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="R7n-jk-t6F"/>
+                                </connections>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.72549019609999998" green="0.23154237329999999" blue="0.17218144730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1PP-oz-hYs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="6Gy-MM-ImT"/>
                             <constraint firstItem="1PP-oz-hYs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8NF-xy-LvP"/>
@@ -64,9 +84,9 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1PP-oz-hYs" secondAttribute="bottom" id="QgL-cv-HD4"/>
                             <constraint firstItem="v9j-aO-Xsg" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="rLS-Jz-yMk"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <connections>
+                        <outlet property="bottomToScrollView" destination="QgL-cv-HD4" id="Bmf-YZ-oIH"/>
                         <outlet property="contentView" destination="v9j-aO-Xsg" id="bxx-jP-CPu"/>
                         <outlet property="scrollView" destination="1PP-oz-hYs" id="unn-RE-QVd"/>
                     </connections>
