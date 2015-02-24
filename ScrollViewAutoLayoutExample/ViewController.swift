@@ -4,12 +4,24 @@
 //
 //  Created by Natasha Murashev on 6/10/14.
 //  Copyright (c) 2014 NatashaTheRobot. All rights reserved.
+// 
+// keyboard support added by Ivo Vacek
 //
 
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBAction func login(sender: LoginButton) {
+        println("login")
+        sender.alpha = 0.2
+        
+        UIView.animateWithDuration(0.3) {
+            [unowned self] in
+            sender.alpha = 1
+        }
+        performSegueWithIdentifier("login", sender: self)
+    }
     @IBOutlet weak var bottomToScrollView: NSLayoutConstraint!
     
     @IBOutlet weak var scrollView : UIScrollView!

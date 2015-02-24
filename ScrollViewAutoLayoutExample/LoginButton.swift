@@ -14,7 +14,6 @@ class LoginButton: UIButton {
         
         layer.cornerRadius = 20.0
         layer.borderWidth = 3.0
-        //self.layer.borderColor = UIColor(red: 85.0/255.0, green: 172.0/255.0, blue: 238.0/255.0, alpha: 1.0).CGColor
         let titleColor = titleColorForState(UIControlState.Normal)
         layer.borderColor =  titleColor?.CGColor
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3D7FA11A8F52A5004429DF /* LoginSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D7FA01A8F52A5004429DF /* LoginSegue.swift */; };
 		4D970FCF1A8BDF8D0088E1B5 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D970FCE1A8BDF8D0088E1B5 /* LoginButton.swift */; };
 		FAF14FC21947404E00ED00C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF14FC11947404E00ED00C5 /* AppDelegate.swift */; };
 		FAF14FC41947404E00ED00C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF14FC31947404E00ED00C5 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D3D7FA01A8F52A5004429DF /* LoginSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSegue.swift; sourceTree = "<group>"; };
 		4D970FCE1A8BDF8D0088E1B5 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		FAF14FBC1947404E00ED00C5 /* ScrollViewAutoLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewAutoLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF14FC01947404E00ED00C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				FAF14FC81947404E00ED00C5 /* Images.xcassets */,
 				FAF14FBF1947404E00ED00C5 /* Supporting Files */,
 				4D970FCE1A8BDF8D0088E1B5 /* LoginButton.swift */,
+				4D3D7FA01A8F52A5004429DF /* LoginSegue.swift */,
 			);
 			path = ScrollViewAutoLayoutExample;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF14FC41947404E00ED00C5 /* ViewController.swift in Sources */,
+				4D3D7FA11A8F52A5004429DF /* LoginSegue.swift in Sources */,
 				4D970FCF1A8BDF8D0088E1B5 /* LoginButton.swift in Sources */,
 				FAF14FC21947404E00ED00C5 /* AppDelegate.swift in Sources */,
 			);
